@@ -42,46 +42,83 @@ fx_d.dersler = { -- Dersler
 	},
 ]]--
 -- benim editlediğim maptaki sınıflar
-/*
+
+// rp_hogwarts_community
 fx_d.siniflar = { -- Sınıflar
-	["Sınıf 1"] = {
+	["KSKS Sınıfı"] = {
 		--konum = {min = Vector(x,x,x), max = Vector(x,x,x)}
-		konum = {min = Vector(256.03, -2865.22, 140.78), max = Vector(1215.5, -2496.43, -130.97)},
+		konum = {min = Vector(-2486.67, -9323.54, -9719.97), max = Vector(-1353.03, -9905.51, -9441.47)},
 		renk = Color(255,191,0)
 	},
-	["Sınıf 2"] = {
-		konum = {min = Vector(-1562.94, -152.36, 101.51), max = Vector(-544.17, 479.77, -215.97)},
+	["İksir Sınıfı"] = {
+		konum = {min = Vector(-9101.42, -5683.97, -10591.79), max = Vector(-8753.49, -4572.26, -10215.03)},
 		renk = Color(255,0,0)
 	},
-	["Sınıf 3"] = {
-		konum = {min = Vector(1298.56, -1516.73, -117.84), max = Vector(2327.15, -2086.77, 100.93)},
+	["Düello Kulubü"] = {
+		konum = {min = Vector(-11036.41, -3953.8, -9974.97), max = Vector(-12420.61, -2218.01, -9560.03)},
 		renk = Color(0,63,255)
 	},
-	["Duello Odası"] = {
-	konum = {min = Vector(-7604.17, -1736.61, 360.03), max = Vector(-8880.97, -2282.99, 755.33)},
+	["Sınıf 4"] = {
+		--konum = {min = Vector(x,x,x), max = Vector(x,x,x)}
+		konum = {min = Vector(-936.03, -8512.53, -9750.31), max = Vector(-1782.64, -9205.01, -9442.16)},
+		renk = Color(255,191,0)
+	},
+	["Sınıf 5"] = {
+		konum = {min = Vector(-494.4, -4329.03, -9723.29), max = Vector(256.97, -5230.8, -9416.94)},
 		renk = Color(0,63,255)
 	},
-	["Astronomi Kulesi"] = {
-		konum = {min = Vector(-7579.62, -716.45, 1360.59), max = Vector(-8268.2, -1542.01, 1725)},
+	["Tılsım Sınıfı"] = {
+		konum = {min = Vector(-4468.27, -3648.03, -9720.23), max = Vector(-4007.88, -4575.97, -9391.88)},
 		renk = Color(127,159,255)
 	},
-	["Quidditch Sahası"] = {
-		konum = {min = Vector(-3366.31, 10541.22, -717.97), max = Vector(2840.49, 13522.68, 582.22)},
+	["Kehanet Sınıfı"] = {
+		konum = {min = Vector(-5236.97, -5128.69, -9722.22), max = Vector(-4661.18, -6100.97, -9238.46)},
 		renk = Color(255,128,128)
 	},
-	["Iksir Sınıfı"] = {
-		konum = {min = Vector(1305.72, -1127.74, -127.97), max = Vector(2580.03, -364.7, 271.75)},
+	["Sınıf 3"] = {
+		konum = {min = Vector(-3950.82, -9661.33, -9723.97), max = Vector(-2798.97, -10202.77, -9333.55)},
 		renk = Color(127,0,95)
 	},
-	["Botanik Bahçesi"] = {
-		konum = {min = Vector(1267.26, 2223.96, -127.97), max = Vector(370.82, 1864.03, 62.55)}
-	},
 	["Büyük Salon"] = {
-	konum = {min = Vector(-7664.68, -3971.97, 361.53), max = Vector(-9147.68, -2964.12, 818.06)},
+		konum = {min = Vector(-13476.85, -5161.15, -9933.97), max = Vector(-12433.6, -3081.64, -8983.03)},
+	},
+	["Botanik"] = {
+		konum = {min = Vector(79.39, -9120.94, -9702), max = Vector(586.44, -10139.97, -9413.63)},
+		renk = Color(0,0,0)
+	},
+	["Astronomi"] = {
+		konum = {min = Vector(-5467.67, -7323.16, -8447.97), max = Vector(-4457.03, -5822.83, -7823.17)},
+		renk = Color(255,255,255)
+	},
+	["Quidditch"] = {
+		konum = {min = Vector(1147.04, 2950.17, 9600.51), max = Vector(-2776.94, -6350.3, 11631.31)},
+		renk = Color(255,255,255)
+	},
+	["Karanlık Sınıf"] = {
+		konum = {min = Vector(13943.83, 13831.29, 5167.91), max = Vector(14695.77, 13304.28, 5383.47)},
+		renk = Color(255,255,255)
+	},
+	["Muggle Bilimleri"] = {
+	konum = {min = Vector(-9220.73, -5286.71, -9752.97), max = Vector(-10169.97, -4028.44, -9266.08)},
 		renk = Color(0,63,255)
-	}
+	},
+	["Seherbaz Sınıfı"] = {
+	konum = {min = Vector(-19.28, -1318.97, 4912.04), max = Vector(721.69, -484.02, 5183.97)},
+		renk = Color(0,63,255)
+	},
+	["SYB Alanı"] = {
+	konum = {min = Vector(13544.235352, -8289.862305, -12037.139648), max = Vector(12292.869141, -6854.891113, -11142.518555)},
+		renk = Color(0,63,255)
+	},
+	["Sinif 2"] = {
+	konum = {min = Vector(-11389.896484, -5348.518066, -9372.791992), max = Vector(-12351.107422, -4667.968262, -8922.453125)},
+		renk = Color(0,63,255)
+	},
+	["Sahne"] = {
+	konum = {min = Vector(-12789.154297, -2046.213013, -11003.195313), max = Vector(-11393.913086, -3590.576660, -10511.676758)},
+		renk = Color(0,63,255)
+	},
 }
-*/
 
 fx_d.acabilecekler = { -- Menüyü açabilecekler
 	"Profesor",
